@@ -1,10 +1,16 @@
 //************* UTILS ***********//
 
+@import './utils/variables';
+
 //************ VENDORS **********//
 
 //************* BASE ************//
 
+@import './base/main';
+
 //************* LAYOUT **********//
+
+@import './layout/presentation'; 
 
 //*********** COMPONENTS ********//
 
