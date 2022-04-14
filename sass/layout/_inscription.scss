@@ -1,0 +1,64 @@
+.inscription-block{
+    background-color: white;
+    
+    margin-top: 1.5em; 
+    margin-bottom: 1.5em; 
+    
+    border-radius: 10px; 
+
+    padding: 1em;  
+
+    input{
+        height: 3em; 
+        width: 100%; 
+
+        padding-left: 1em;   
+
+        opacity: 60%; 
+        font-weight: bolder; 
+    }
+
+    &__button{
+        width: 100%; 
+        height: 3em;
+
+        background-color: #00cc8d;
+        color: white; 
+        font-weight: bolder; 
+ 
+        border: none; 
+        border-radius: 5px;  
+
+        box-shadow: rgba(0, 185, 129, 1) 0px 5px  1px 0px;  
+        
+        cursor: pointer; 
+    }
+
+    &__info{
+        font-size: 0.7em;  
+        text-align: center; 
+
+        opacity: 60%;  
+    }
+
+    &__info span{
+        color: red; 
+        font-weight: bolder;  
+    }
+
+    input{
+        margin-bottom: 1em; 
+    }
+
+    &__error{
+        color: red; 
+        margin: 0;
+        padding: 0; 
+
+        font-size: .9em; 
+        text-align: end;  
+        
+        // margin-top: .5em; 
+        margin-bottom: .5em;  
+    }
+} 

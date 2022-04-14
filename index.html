@@ -12,29 +12,8 @@
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  <!-- Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services -->
+<body> 
   
   <section class="presentation">
     <h1 class="presentation__title">
@@ -46,10 +25,36 @@
   but understanding how developers think is invaluable.
     </p>
 
-    <div class="presentation__button">
-      <span>Try it free 7 days</span> then $20/mo threafter
-    </div>
+    <!-- <div class="presentation__button">
+      <p><span>Try it free 7 days</span> then $20/mo threafter</p> 
+    </div> -->
+
+    <button class="presentation__button">
+      <span>Try it free 7 days</span> then $20/mo thereafter 
+    </button>
   </section>
 
+  <section class="inscription-block">
+    <form action="" class="inscription-block__form">
+      <input type="text" value="First Name" onFocus="this.value='';"> 
+      <p class="first inscription-block__error">First name invalid</p>
+      <input type="text" value="Last Name" onFocus="this.value='';">
+      <p class="last inscription-block__error">Last name invalid</p>
+      <input type="email" value="Email Adress" onFocus="this.value='';">
+      <p class="mail inscription-block__error">Email invalid</p> 
+      <input type="password" value="Password" onFocus="this.value='';">  
+      <p class="password inscription-block__error">Password invalid</p> 
+    </form>
+
+    <button class="inscription-block__button">
+      CLAIM YOUR FREE TRIAL
+    </button>
+
+    <p class="inscription-block__info">
+      By clicking the button, you are agreeing to our <span> Terms and Services </span>
+    </p>
+  </section> 
+
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -3,19 +3,19 @@
     text-align: center; 
 
     &__button{
-        background-color: #5a58a2;  
-        font-size: .8em;   
+        cursor: pointer; 
+        background-color: #5a58a2;
+        font-size: .8em;
+        color: white; 
 
-        height: 5em;  
-
-        border-radius: 10px; 
+        height: 5em; 
 
         padding: 0em 4em; 
+    
+        border: none; 
+        border-radius: 10px;  
 
-        display: table-cell;
-        vertical-align: middle; 
-
-        line-height: 1.8em;     
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px  2px 0px;     
 
         span{
             font-weight: bolder; 
