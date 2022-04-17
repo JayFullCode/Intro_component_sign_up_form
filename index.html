@@ -35,20 +35,19 @@
   </section>
 
   <section class="inscription-block">
-    <form action="" class="inscription-block__form">
-      <input type="text" value="First Name" onFocus="this.value='';"> 
+    <form class="inscription-block__form" id="submit-form" novalidate>
+      <input type="text" class="input-class" placeholder="First Name"> 
       <p class="first inscription-block__error">First name invalid</p>
-      <input type="text" value="Last Name" onFocus="this.value='';">
+      <input class="input-class" type="text" placeholder="Last Name">
       <p class="last inscription-block__error">Last name invalid</p>
-      <input type="email" value="Email Adress" onFocus="this.value='';">
+      <input class="input-class" type="email" placeholder="Email">
       <p class="mail inscription-block__error">Email invalid</p> 
-      <input type="password" value="Password" onFocus="this.value='';">  
+      <input class="input-class" type="password" placeholder="Password">  
       <p class="password inscription-block__error">Password invalid</p> 
-    </form>
-
-    <button class="inscription-block__button">
-      CLAIM YOUR FREE TRIAL
-    </button>
+    
+      <button type="submit" class="inscription-block__button">CLAIM YOUR FREE TRIAL</button>
+      <!-- <input id="submit-button" type="submit" value="CLAIM YOUR FREE TRIAL" class="inscription-block__button"> -->
+    </form> 
 
     <p class="inscription-block__info">
       By clicking the button, you are agreeing to our <span> Terms and Services </span>
