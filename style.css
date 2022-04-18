@@ -11,25 +11,26 @@ html, body {
   background: #ff7577 url("/images/bg-intro-mobile.png") no-repeat top;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+  }
+}
 .presentation {
   color: white;
   text-align: center;
 }
-.presentation__button {
-  cursor: pointer;
-  background-color: #5a58a2;
-  font-size: 0.8em;
-  color: white;
-  height: 5em;
-  padding: 0em 4em;
-  border: none;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 2px 0px;
-}
-.presentation__button span {
-  font-weight: bolder;
-}
 
+@media screen and (min-width: 900px) {
+  .presentation {
+    text-align: start;
+    margin-right: 3em;
+  }
+}
 .inscription-block {
   background-color: white;
   margin-top: 1.5em;
@@ -68,13 +69,41 @@ html, body {
   margin-bottom: 1em;
 }
 .inscription-block__error {
-  color: red;
+  color: #ffacae;
   margin: 0;
   padding: 0;
   font-size: 0.9em;
   text-align: end;
   margin-top: -1em;
   margin-bottom: 0.5em;
+}
+
+.inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inscription__button {
+  cursor: pointer;
+  background-color: #5a58a2;
+  font-size: 0.8em;
+  color: white;
+  height: 5em;
+  width: 100%;
+  padding: 0em 4em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 2px 0px;
+}
+.inscription__button span {
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 900px) {
+  .inscription {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

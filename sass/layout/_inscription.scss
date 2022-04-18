@@ -51,7 +51,7 @@
     }
 
     &__error{
-        color: red; 
+        color: #ffacae;  
         margin: 0;
         padding: 0; 
 
@@ -59,6 +59,43 @@
         text-align: end;  
 
         margin-top: -1em; 
-        margin-bottom: .5em; 
+        margin-bottom: .5em;  
+    } 
+
+}
+
+.inscription{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+
+    &__button{
+        cursor: pointer; 
+        background-color: #5a58a2;
+        font-size: .8em;
+        color: white; 
+
+        height: 5em; 
+        width: 100%; 
+
+        padding: 0em 4em; 
+
+        border: none; 
+        border-radius: 10px;  
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px  2px 0px;     
+
+        span{
+            font-weight: bolder; 
+        }
     }
-} 
+
+}
+
+@include desktop-only{
+    .inscription{
+        width: 100%; 
+    }
+}
+ 
